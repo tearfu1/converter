@@ -33,19 +33,3 @@ func (e Envelope) String() string {
 	return fmt.Sprintf("Envelope is %v",
 		e.Cube)
 }
-
-// func check(e error) {
-// 	if e != nil {
-// 		panic(e)
-// 	}
-// }
-// func main() {
-// 	data, err := os.ReadFile("eurofxref-daily.xml")
-// 	check(err)
-
-// 	envlp := new(Envelope)
-// 	err = xml.Unmarshal([]byte(data), envlp)
-// 	check(err)
-
-// 	fmt.Println(envlp)
-// }
