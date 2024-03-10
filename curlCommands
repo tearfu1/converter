@@ -1,0 +1,24 @@
+curl -X POST \                                              
+  http://localhost:8080/create \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "name": "aaa",
+    "rate": 1111.23
+}'
+
+curl -X DELETE \
+  http://localhost:8080/delete/USD
+
+curl -X PUT \
+  http://localhost:8080/update/USD \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "name": "USD",
+    "rate": 1.23
+}'
+
+url -X GET  http://localhost:8080/converter -d   '{
+    "from": "JPY",
+    "to": "USD",
+    "amount": 200.0
+}'
